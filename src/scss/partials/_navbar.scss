@@ -1,0 +1,77 @@
+.nav {
+  background-color: #fffffc !important;
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  font-weight: bold;
+  top: 0;
+
+  &__logo {
+    color: #d00000 !important;
+    font-size: 2em;
+  }
+
+  &__logo:hover {
+    text-decoration: none;
+  }
+
+  &__link {
+    color: black !important;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+
+  &__link:hover {
+    text-decoration: none;
+    color: #d00000 !important;
+  }
+
+  &__active {
+    color: #d00000 !important;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+
+  &__active:hover {
+    text-decoration: none;
+    color: #d00000;
+  }
+
+  &__login {
+    color: white !important;
+    background-color: #d00000;
+    margin-left: 50px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  &__login:hover {
+    text-decoration: none;
+  }
+
+  &__icon {
+    color: #d00000 !important;
+  }
+
+  @media screen and (max-width: 990px) {
+    &__link {
+      text-align: center;
+      margin-left: 0;
+      padding: 0.5em;
+    }
+
+    &__login {
+      text-align: center;
+      margin-left: 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 0.5em;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .nav {
+    z-index: 1;
+    position: fixed !important;
+  }
+}

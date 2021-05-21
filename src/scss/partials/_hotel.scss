@@ -1,0 +1,57 @@
+.hotel {
+  display: flex;
+
+  &__left {
+    width: 100%;
+    padding: 1.5em;
+  }
+  &__dates {
+    display: flex;
+  }
+
+  &__btnContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__bookBtn {
+    background-color: #d00000;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    width: 65%;
+  }
+
+  &__bookBtn:hover {
+    background-color: #fc0000;
+    color: white;
+  }
+
+  &__dateContainer {
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  &__dateContainer > input {
+    width: 90%;
+  }
+
+  @media (max-width: 990px) {
+    &__dates {
+      display: block;
+    }
+    &__dateContainer > input {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .hotel {
+    flex-direction: column;
+  }
+}
